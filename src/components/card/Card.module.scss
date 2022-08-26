@@ -1,0 +1,109 @@
+.card {
+  background-color: white;
+  max-width: 45rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 10.2rem auto 0 auto;
+  text-align: center;
+  box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.1518);
+  @media only screen and (max-width: 23.4375em) {
+    max-width: 32.7rem;
+    margin: 7.1rem auto 0 auto;
+  }
+
+  &__heroImage {
+    background-image: url('../../assets/illustration-hero.svg');
+    padding-top: 48.88%;
+    width: 100%;
+    background-size: cover;
+    // width: 100%;
+    // max-height: 1.6rem;
+  }
+
+  &__info {
+    padding: 4.5rem 4.8rem 4.8rem 4.8rem;
+    display: grid;
+    row-gap: 3.2rem;
+    @media only screen and (max-width: 23.4375em) {
+      padding: 3.2rem 2.4rem;
+      row-gap: 2.4rem;
+    }
+    h1 {
+      margin-bottom: 1.7rem;
+      @media only screen and (max-width: 23.4375em) {
+        margin-bottom: 1.6rem;
+      }
+    }
+    p {
+      margin-bottom: 1.8rem;
+      @media only screen and (max-width: 23.4375em) {
+        margin-bottom: 2.4rem;
+      }
+    }
+    &-plan {
+      background-color: var(--clr-neutral-blue-very-pale);
+      border-radius: 1.1rem;
+      padding: 2.5rem 2.4rem;
+      display: flex;
+      justify-content: space-between;
+      @media only screen and (max-width: 23.4375em) {
+        padding: 1.7rem 1.6rem;
+      }
+
+      &-details {
+        display: flex;
+        &-icon {
+          margin-right: 2rem;
+        }
+        &-titles {
+          display: grid;
+          row-gap: 6px;
+          h2 {
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: var(--clr-neutral-blue-dark);
+            @media only screen and (max-width: 23.4375em) {
+              font-size: 1.4rem;
+            }
+          }
+          span {
+            font-size: 1.6rem;
+            @media only screen and (max-width: 23.4375em) {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+
+      &-btn {
+        border: none;
+        background-color: inherit;
+        color: var(--clr-primary-blue-bright);
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+
+        @media only screen and (max-width: 23.4375em) {
+          font-size: 1.3rem;
+        }
+
+        &:hover {
+          color: rgba(118, 108, 241, 1);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__cancel {
+    border: none;
+    background-color: inherit;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--clr-neutral-blue-desaturated);
+    cursor: pointer;
+    &:hover {
+      color: rgba(118, 108, 241, 1);
+    }
+  }
+}
